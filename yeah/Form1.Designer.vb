@@ -536,7 +536,7 @@ Partial Class Form1
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(144, 23)
         Me.Button9.TabIndex = 20
-        Me.Button9.Text = "Settings"
+        Me.Button9.Text = "Contact Us"
         Me.Button9.UseVisualStyleBackColor = False
         '
         'Label5
@@ -849,9 +849,9 @@ Partial Class Form1
         Me.Label25.AutoSize = True
         Me.Label25.Location = New System.Drawing.Point(52, 705)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(102, 13)
+        Me.Label25.Size = New System.Drawing.Size(14, 13)
         Me.Label25.TabIndex = 22
-        Me.Label25.Text = "richkhid@gmail.com"
+        Me.Label25.Text = "C"
         '
         'Label26
         '
