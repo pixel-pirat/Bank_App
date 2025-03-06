@@ -48,6 +48,15 @@ Public Class Form1
         ApplyCircularRegion(PictureBox15)
         ApplyCircularRegion(PictureBox16)
         ApplyCircularRegion(PictureBox17)
+        ApplyCircularRegion(PictureBox18)
+        ApplyCircularRegion(PictureBox19)
+        ApplyCircularRegion(PictureBox20)
+        ApplyCircularRegion(PictureBox21)
+        ApplyCircularRegion(PictureBox22)
+        ApplyCircularRegion(PictureBox23)
+        ApplyCircularRegion(PictureBox24)
+        ApplyCircularRegion(PictureBox25)
+        '        ApplyCircularRegion(PictureBox21)
 
 
 
