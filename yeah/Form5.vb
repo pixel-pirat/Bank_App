@@ -1,61 +1,23 @@
 ﻿Imports System.Drawing.Drawing2D
-Imports System.Windows.Forms.DataVisualization.Charting
-Imports yeah.Form2
 
-Public Class Form2
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+Public Class Form5
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Form2.Show()
+        Me.Hide()
 
     End Sub
 
-    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim series1 As New Series("Account Types")
-        series1.ChartType = SeriesChartType.Column
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Form4.Show()
+        Me.Hide()
 
-        series1.Points.AddXY("Savings", 390)
-        series1.Points.AddXY("Loans", 600)
-        series1.Points.AddXY("Current", 300)
-        series1.Points.AddXY("Investment", 200)
-        Chart2.Series.Add(series1)
+    End Sub
 
-        ' Create a new series
-        Dim series As New Series("Monthly Expenses")
-        series.ChartType = SeriesChartType.SplineArea
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
+    End Sub
 
-
-        ' Add data points for all 12 months
-        series.Points.AddXY("Jan", 1000)
-        series.Points.AddXY("Feb", 100)
-        series.Points.AddXY("Mar", 500)
-        series.Points.AddXY("Apr", 1800)
-        series.Points.AddXY("May", 20)
-        series.Points.AddXY("Jun", 2000)
-        series.Points.AddXY("Jul", 2500)
-        series.Points.AddXY("Aug", 2800)
-        series.Points.AddXY("Sep", 4000)
-        series.Points.AddXY("Oct", 3200)
-        series.Points.AddXY("Nov", 3500)
-        series.Points.AddXY("Dec", 800)
-
-        ' Add the series to the chart
-        Chart1.Series.Add(series)
-
-        ' Set the X-axis label format to display the first three letters of every month
-        Chart1.ChartAreas(0).AxisX.LabelStyle.Format = "MMM"
-
-        ' Set the X-axis interval to 1 to repeat the labels for every data point
-        Chart1.ChartAreas(0).AxisX.Interval = 1
-
-        ' Set the X-axis interval type to NotInterval to display all labels
-        Chart1.ChartAreas(0).AxisX.IntervalType = DateTimeIntervalType.NotSet
-
-        ' Enable tooltips
-        Chart1.Series(0).ToolTip = "#VALX{MMM}: #VALY{C0}"
-
-        'Remove the majorgridlines and minorgridlines
-        Chart1.ChartAreas(0).AxisX.MajorGrid.Enabled = False
-
-
+    Private Sub Form5_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ApplyCurvedRegion(Panel8, 15, 15, 15, 15)
 
 
@@ -90,13 +52,13 @@ Public Class Form2
         ApplyCircularRegion(PictureBox16)
         ApplyCircularRegion(PictureBox17)
         ApplyCircularRegion(PictureBox18)
-        ApplyCircularRegion(PictureBox19)
-        ApplyCircularRegion(PictureBox20)
-        ApplyCircularRegion(PictureBox21)
-        ApplyCircularRegion(PictureBox22)
-        ApplyCircularRegion(PictureBox23)
-        ApplyCircularRegion(PictureBox24)
-        ApplyCircularRegion(PictureBox25)
+        ' ApplyCircularRegion(PictureBox19)
+        'ApplyCircularRegion(PictureBox20)
+        'ApplyCircularRegion(PictureBox21)
+        'ApplyCircularRegion(PictureBox22)
+        'ApplyCircularRegion(PictureBox23)
+        'ApplyCircularRegion(PictureBox24)
+        'ApplyCircularRegion(PictureBox25)
     End Sub
 
     Private Sub ApplyCurvedRegion(panel As Panel, radiusTopLeft As Integer, radiusTopRight As Integer, radiusBottomRight As Integer, radiusBottomLeft As Integer)
@@ -150,33 +112,9 @@ Public Class Form2
         path.Dispose()
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Form4.Show()
-        Me.Hide()
-
-    End Sub
-
-    Private Sub Chart1_Click(sender As Object, e As EventArgs) Handles Chart1.Click
-
-    End Sub
-
     Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
         Form3.Show()
         Me.Hide()
-
-    End Sub
-
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Form5.Show()
-        Me.Hide()
-
-    End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
     End Sub
 End Class

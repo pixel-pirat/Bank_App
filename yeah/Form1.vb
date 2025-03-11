@@ -1,8 +1,38 @@
-﻿Imports System.Windows.Forms
+﻿Imports MySql.Data.MySqlClient
+Imports System.Windows.Forms
 Imports System.Drawing.Drawing2D
 Imports System.IO
-
+Imports System.Data.SqlClient
 Public Class Form1
+
+
+
+    Private Sub ConnectToMySQLDatabase()
+        Dim connectionString As String = "server=localhost;user=root;password=password;database=your_database"
+        '        Dim connection As New MySqlConnection(connectionString)
+
+        '       Try
+        '      connection.Open()
+        '     MsgBox("Connected to MySQL database!")
+
+        ' Create a command to execute a query
+        '        Dim command As New MySqlCommand("SELECT * FROM your_table", connection)
+        '       Dim reader As MySqlDataReader = command.ExecuteReader()
+
+        ' Read the results
+        '       While reader.Read()
+        '      MsgBox(reader("column_name").ToString())
+        '     End While
+
+        '     reader.Close()
+        '    Catch ex As MySqlException
+        '   MsgBox("Error connecting to MySQL database: " & ex.Message)
+        '  Finally
+        '  connection.Close()
+        '  End Try
+    End Sub
+
+
     Private Sub Panel6_Paint(sender As Object, e As PaintEventArgs)
 
     End Sub
