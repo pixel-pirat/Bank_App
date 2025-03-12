@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form3
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form3
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -31,8 +31,6 @@ Partial Class Form3
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
-        Me.CuiButton1 = New CuoreUI.Controls.cuiButton()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -143,62 +141,11 @@ Partial Class Form3
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Welcome Back"
         '
-        'Guna2Button1
-        '
-        Me.Guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button1.Location = New System.Drawing.Point(93, 115)
-        Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.Size = New System.Drawing.Size(180, 45)
-        Me.Guna2Button1.TabIndex = 2
-        Me.Guna2Button1.Text = "Guna2Button1"
-        '
-        'CuiButton1
-        '
-        Me.CuiButton1.CheckButton = False
-        Me.CuiButton1.Checked = False
-        Me.CuiButton1.CheckedBackground = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(106, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.CuiButton1.CheckedForeColor = System.Drawing.Color.White
-        Me.CuiButton1.CheckedImageTint = System.Drawing.Color.White
-        Me.CuiButton1.CheckedOutline = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(106, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.CuiButton1.Content = "Your text here!"
-        Me.CuiButton1.DialogResult = System.Windows.Forms.DialogResult.None
-        Me.CuiButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
-        Me.CuiButton1.ForeColor = System.Drawing.Color.White
-        Me.CuiButton1.HoverBackground = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(106, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.CuiButton1.HoveredImageTint = System.Drawing.Color.White
-        Me.CuiButton1.HoverForeColor = System.Drawing.Color.White
-        Me.CuiButton1.HoverOutline = System.Drawing.Color.Empty
-        Me.CuiButton1.Image = Nothing
-        Me.CuiButton1.ImageAutoCenter = True
-        Me.CuiButton1.ImageExpand = New System.Drawing.Point(0, 0)
-        Me.CuiButton1.ImageOffset = New System.Drawing.Point(0, 0)
-        Me.CuiButton1.ImageTint = System.Drawing.Color.White
-        Me.CuiButton1.Location = New System.Drawing.Point(117, 237)
-        Me.CuiButton1.Name = "CuiButton1"
-        Me.CuiButton1.NormalBackground = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(106, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.CuiButton1.NormalOutline = System.Drawing.Color.Empty
-        Me.CuiButton1.OutlineThickness = 1.6!
-        Me.CuiButton1.PressedBackground = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(106, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.CuiButton1.PressedForeColor = System.Drawing.Color.White
-        Me.CuiButton1.PressedImageTint = System.Drawing.Color.White
-        Me.CuiButton1.PressedOutline = System.Drawing.Color.Empty
-        Me.CuiButton1.Rounding = New System.Windows.Forms.Padding(8)
-        Me.CuiButton1.Size = New System.Drawing.Size(153, 45)
-        Me.CuiButton1.TabIndex = 3
-        Me.CuiButton1.TextOffset = New System.Drawing.Point(0, 0)
-        '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1350, 731)
-        Me.Controls.Add(Me.CuiButton1)
-        Me.Controls.Add(Me.Guna2Button1)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "Form3"
         Me.Text = "Form3"
@@ -217,6 +164,4 @@ Partial Class Form3
     Friend WithEvents Label1 As Label
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Button1 As Button
-    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents CuiButton1 As CuoreUI.Controls.cuiButton
 End Class
